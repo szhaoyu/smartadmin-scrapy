@@ -1,0 +1,141 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" class="no-js"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+	
+		<meta charset="utf-8" />
+		<title> SmartAdmin (AngularJS)</title>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- #CSS Links -->
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/font-awesome.min.css" />
+
+		<!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/smartadmin-production-plugins.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/smartadmin-production.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/smartadmin-skins.min.css" />
+
+		<!-- SmartAdmin AngularJS Fixes -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/fixes.css" />
+
+		<!-- SmartAdmin RTL Support (Not using RTL? Disable the CSS below to save bandwidth) -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/smartadmin-rtl.min.css" />
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		specific styles this will also ensure you retrain your customization with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/demo.min.css" />
+
+		<!-- #FAVICONS -->
+		<link rel="shortcut icon" href="styles/img/favicon/favicon.ico" type="image/x-icon" />
+
+		<!-- #GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700" />
+
+		<!-- #APP SCREEN / ICONS -->
+		<!-- Specifying a Webpage Icon for Web Clip
+		Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+		<link rel="apple-touch-icon" href="styles/img/splash/sptouch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="styles/img/splash/touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="styles/img/splash/touch-icon-iphone-retina.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="styles/img/splash/touch-icon-ipad-retina.png" />
+
+		<!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<!-- Startup image for web apps -->
+		<link rel="apple-touch-startup-image" href="styles/img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+		<link rel="apple-touch-startup-image" href="styles/img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+		<link rel="apple-touch-startup-image" href="styles/img/splash/iphone.png" media="screen and (max-device-width: 320px)" />
+
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="build/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="libs/jquery/2.1.1/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="build/../plugin/requirejs-domready/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lodash" src="build/../plugin/lodash/dist/lodash.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fastclick" src="build/../plugin/fastclick/lib/fastclick.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fullcalendar" src="build/../smartadmin-plugin/fullcalendar/jquery.fullcalendar.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular" src="libs/angularjs/1.2.26/angular.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="notification" src="build/../smartadmin-plugin/notification/SmartNotification.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-ui" src="libs/jqueryui/1.11.2/jquery-ui.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-couch-potato" src="build/../plugin/angular-couch-potato/dist/angular-couch-potato.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-ui-router" src="build/../plugin/angular-ui-router/release/angular-ui-router.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-animate" src="libs/angularjs/1.2.26/angular-animate.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-bootstrap" src="build/../plugin/angular-bootstrap/ui-bootstrap-tpls.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-google-plus" src="build/../plugin/angular-google-plus/dist/angular-google-plus.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-easyfb" src="build/../plugin/angular-easyfb/angular-easyfb.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-resource" src="libs/angularjs/1.2.26/angular-resource.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-sanitize" src="libs/angularjs/1.2.26/angular-sanitize.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-google-maps" src="build/../plugin/angular-google-maps/dist/angular-google-maps.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="build/../plugin/moment/min/moment-with-locales.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="smartwidgets" src="build/../smartadmin-plugin/smartwidgets/jarvis.widget.min.js"></script></head>
+	<!--
+
+	TABLE OF CONTENTS.
+
+	Use search to find needed section.
+
+	===================================================================
+
+	|  01. #CSS Links                |  all CSS links and file paths  |
+	|  02. #FAVICONS                 |  Favicon links and file paths  |
+	|  03. #GOOGLE FONT              |  Google font link              |
+	|  04. #APP SCREEN / ICONS       |  app icons, screen backdrops   |
+	|  05. #BODY                     |  body tag                      |
+	|  06. #HEADER                   |  header tag                    |
+
+	===================================================================
+
+	-->
+
+	<!-- #BODY -->
+	<!-- Possible Classes (to hardcode the classes you must disable the __ module)
+
+	* 'smart-style-{SKIN#}'
+	* 'smart-rtl'         - Switch theme mode to RTL
+	* 'menu-on-top'       - Switch to top navigation (no DOM change required)
+	* 'no-menu'           - Hides the menu completely
+	* 'hidden-menu'       - Hides the main menu but still accessable by hovering over left edge
+	* 'fixed-header'      - Fixes the header
+	* 'fixed-navigation'  - Fixes the main menu
+	* 'fixed-ribbon'      - Fixes breadcrumb
+	* 'fixed-page-footer' - Fixes footer
+	* 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
+
+	Possible attributes
+
+	* 'data-smart-device-detect' - Detects if mobile or desktop, adds a class to body tag
+	* 'data-smart-fast-click'    - Mobile click events
+	* 'data-smart-layout'        - Mobile view event listener
+	* 'data-smart-page-title'    - Page title
+
+	-->
+
+	<body data-smart-device-detect="" data-smart-fast-click="" data-smart-layout="" data-smart-page-title="SmartAdmin AngularJS">
+
+		<!-- ui-view container -->
+
+		<div data-ui-view="root" data-autoscroll="false"></div>
+
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!--[if lt IE 9]>
+			<script src="plugin/es5-shim/es5-shim.js"></script>
+			<script src="plugin/json3/lib/json3.min.js"></script>
+		<![endif]-->
+
+		<!-- Use for production after building the project with grunt --> 
+		<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="build/rconfig.js"></script>
+		<script src="plugin/requirejs/require.js" data-main="build/main.js"></script>		
+
+		<!-- Use for development -->		
+		<!--
+		<script src="app/rconfig.js"></script>
+		<script src="plugin/requirejs/require.js" data-main="app/main.js"></script>-->
+		
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+        <script type="text/javascript">
+        
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-43548732-3']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+
+	
+	
+
+<div id="divSmallBoxes"></div><div id="divMiniIcons"></div><div id="divbigBoxes"></div></body></html>
